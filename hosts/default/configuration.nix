@@ -356,7 +356,7 @@
     wget
     curl
     neofetch
-    nvtop
+    nvtopPackages.full
     torrent7z
     p7zip
     croc
