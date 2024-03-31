@@ -434,14 +434,14 @@
       xkb.variant = "";
     };
 
-    boot.blacklistedKernelModules = [ "nouveau" "intel" ];
-
     xrdp = {
       enable = false;
       defaultWindowManager = "startplasma-x11";
       openFirewall = true;
     };
   };
+
+  boot.blacklistedKernelModules = [ "nouveau" "intel" ];
 
   # services.xserver.displayManager.defaultSession = "plasmawayland";
 
