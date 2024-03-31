@@ -54,7 +54,6 @@
     };
   };
 
-
   boot = {
     kernel.sysctl = {
       "kernel.unprivileged_userns_clone" = 1; # for steam
@@ -430,11 +429,12 @@
       # Disabled for xiv launcher?
       # Load nvidia driver for Xorg and Wayland
       videoDrivers = [ "nvidia" ]; # or "nvidiaLegacy470 etc.
-      boot.blacklistedKernelModules = [ "nouveau" "intel" ];
 
       xkb.layout = "us";
       xkb.variant = "";
     };
+
+    boot.blacklistedKernelModules = [ "nouveau" "intel" ];
 
     xrdp = {
       enable = false;
