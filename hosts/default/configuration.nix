@@ -441,7 +441,7 @@
     };
   };
 
-  boot.blacklistedKernelModules = [ "nouveau" "intel" ];
+  boot.blacklistedKernelModules = [ "nouveau" "intel" "i915" ];
 
   # services.xserver.displayManager.defaultSession = "plasmawayland";
 
