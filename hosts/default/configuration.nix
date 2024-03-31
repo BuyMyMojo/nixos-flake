@@ -427,8 +427,9 @@
         autoLogin.user = "buymymojo";
       };
 
+      # Disabled for xiv launcher?
       # Load nvidia driver for Xorg and Wayland
-      videoDrivers = [ "nvidia" ]; # or "nvidiaLegacy470 etc.
+      # videoDrivers = [ "nvidia" ]; # or "nvidiaLegacy470 etc.
 
       xkb.layout = "us";
       xkb.variant = "";
