@@ -430,7 +430,7 @@
       # Disabled for xiv launcher?
       # Load nvidia driver for Xorg and Wayland
       videoDrivers = [ "nvidia" ]; # or "nvidiaLegacy470 etc.
-      boot.blacklistedKernelModules = [ "nouveau" "intel" ]
+      boot.blacklistedKernelModules = [ "nouveau" "intel" ];
 
       xkb.layout = "us";
       xkb.variant = "";
