@@ -28,10 +28,10 @@
 
   ];
 
-  specialisation."VFIO".configuration = {
-    system.nixos.tags = [ "with-vfio" ];
-    vfio.enable = true;
-  };
+  # specialisation."VFIO".configuration = {
+  #   system.nixos.tags = [ "with-vfio" ];
+  #   vfio.enable = true;
+  # };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -99,7 +99,7 @@
     nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;
+    # package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;
   };
 
   networking.hostName = "nixos-mojoPC"; # Define your hostname.
